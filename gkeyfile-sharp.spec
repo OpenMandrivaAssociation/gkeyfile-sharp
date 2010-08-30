@@ -3,6 +3,7 @@
 %define git 20100818
 %define release %mkrel -c %git 1
 %define api 1.0
+
 Summary: Mono bindings for the GKeyFile library
 Name: %{name}
 Version: %{version}
@@ -15,7 +16,6 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 BuildRequires: mono-devel
 BuildRequires: glib2-devel
-BuildRequires: udev-devel >= %udev
 BuildRequires: glib-sharp2 >= 2.12.9
 BuildRequires: gtk-sharp2-devel
 Requires: glib2
