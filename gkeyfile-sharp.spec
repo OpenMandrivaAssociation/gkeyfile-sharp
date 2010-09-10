@@ -1,14 +1,14 @@
 %define name gkeyfile-sharp
 %define version 0.1
-%define git 20100818
-%define release %mkrel -c %git 1
-%define api 1.0
+%define git 662c5c1
+%define release %mkrel 1
 
 Summary: Mono bindings for the GKeyFile library
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{git}.tar.xz
+# http://github.com/mono/gkeyfile-sharp/tarball/GKEYFILE_SHARP_0_1
+Source0: %{name}-%{version}.tar.gz
 License: LGPLv2+
 Group: System/Libraries
 Url: http://gitorious.org/gkeyfile-sharp/
@@ -34,7 +34,7 @@ Group: Development/Other
 This is a Mono binding for the GKeyFile library.
 
 %prep
-%setup -q -n %name
+%setup -q -n mono-%name-%git
 ./autogen.sh
 
 %build
@@ -51,9 +51,9 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc AUTHORS
-%_prefix/lib/mono/%name-%api
+%_prefix/lib/mono/%name
 %_prefix/lib/mono/gac/%name
 
 %files devel
 %defattr(-,root,root)
-%_datadir/pkgconfig/%name-%api.pc
+%_datadir/pkgconfig/%name.pc
