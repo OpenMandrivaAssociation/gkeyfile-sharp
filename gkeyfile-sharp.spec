@@ -11,7 +11,7 @@ Release: %{release}
 Source0: %{name}-%{version}.tar.gz
 License: LGPLv2+
 Group: System/Libraries
-Url: http://gitorious.org/gkeyfile-sharp/
+Url: http://github.com/mono/gkeyfile-sharp
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 BuildRequires: mono-devel
