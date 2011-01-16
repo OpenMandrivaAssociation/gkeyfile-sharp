@@ -1,7 +1,7 @@
 %define name gkeyfile-sharp
 %define version 0.1
 %define git 662c5c1
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Mono bindings for the GKeyFile library
 Name: %{name}
@@ -9,6 +9,7 @@ Version: %{version}
 Release: %{release}
 # http://github.com/mono/gkeyfile-sharp/tarball/GKEYFILE_SHARP_0_1
 Source0: %{name}-%{version}.tar.gz
+Patch0: gkeyfile-sharp-0.1-fix-dllimports.patch
 License: LGPLv2+
 Group: System/Libraries
 Url: http://github.com/mono/gkeyfile-sharp
@@ -35,6 +36,7 @@ This is a Mono binding for the GKeyFile library.
 
 %prep
 %setup -q -n mono-%name-%git
+%apply_patches
 ./autogen.sh
 
 %build
