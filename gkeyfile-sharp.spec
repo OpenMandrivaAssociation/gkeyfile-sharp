@@ -1,7 +1,7 @@
 %define name gkeyfile-sharp
 %define version 0.1
 %define git 662c5c1
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary: Mono bindings for the GKeyFile library
 Name: %{name}
