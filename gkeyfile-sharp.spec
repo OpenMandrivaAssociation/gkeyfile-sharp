@@ -3,7 +3,7 @@
 Summary:	Mono bindings for the GKeyFile library
 Name:		gkeyfile-sharp
 Version:	0.1
-Release:	9
+Release:	10
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://github.com/mono/gkeyfile-sharp
