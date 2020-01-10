@@ -31,7 +31,7 @@ This is a Mono binding for the GKeyFile library.
 
 %prep
 %setup -qn mono-%{name}-%{git}
-%apply_patches
+%autopatch -p1
 ./autogen.sh
 
 %build
