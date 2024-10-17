@@ -6,7 +6,7 @@ Version:	0.1
 Release:	15
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://github.com/mono/gkeyfile-sharp
+Url:		https://github.com/mono/gkeyfile-sharp
 # http://github.com/mono/gkeyfile-sharp/tarball/GKEYFILE_SHARP_0_1
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		gkeyfile-sharp-0.1-fix-dllimports.patch
